@@ -1,0 +1,12 @@
+root = true
+
+# All files
+[*]
+indent_style = tab
+
+# Xml files
+[*.xml]
+indent_size = 2
+
+[*.{hpp,cpp}]
+charset = utf-8
