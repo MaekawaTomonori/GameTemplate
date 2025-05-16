@@ -44,6 +44,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <EnableASAN>true</EnableASAN>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -51,6 +52,7 @@
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <EnableASAN>true</EnableASAN>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -147,22 +149,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\main.cpp" />
-    <ClCompile Include="..\MyGame.cpp" />
-    <ClCompile Include="..\Scene\GameScene.cpp" />
-    <ClCompile Include="..\Scene\ResultScene.cpp" />
-    <ClCompile Include="..\Scene\TitleScene.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\MyGame.hpp" />
-    <ClInclude Include="..\Scene\GameScene.hpp" />
-    <ClInclude Include="..\Scene\ResultScene.hpp" />
-    <ClInclude Include="..\Scene\TitleScene.hpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Engine\Engine.vcxproj">
+    <ProjectReference Include="..\Engine\Engine.vcxproj">
       <Project>{675984ea-a7a7-49ad-b456-6793bf1a67fa}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MyGame.cpp" />
+    <ClCompile Include="Scene\GameScene.cpp" />
+    <ClCompile Include="Scene\ResultScene.cpp" />
+    <ClCompile Include="Scene\TitleScene.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyGame.hpp" />
+    <ClInclude Include="Scene\GameScene.hpp" />
+    <ClInclude Include="Scene\ResultScene.hpp" />
+    <ClInclude Include="Scene\TitleScene.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
