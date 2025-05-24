@@ -1,4 +1,4 @@
-﻿#include "MyGame.hpp"
+#include "MyGame.hpp"
 
 MyGame::MyGame(): IGame() {
 } 
@@ -6,11 +6,16 @@ MyGame::MyGame(): IGame() {
 MyGame::~MyGame() = default;
 
 void MyGame::Initialize() {
-	SetConfig({"Engine", 60});
+	GetCurrentConfig()
+		.SetTitle("Engine")
+		.SetFPS(60);
 }
 
 void MyGame::Update() {
 }
 
 void MyGame::Shutdown() {
+}
+
+void MyGame::Draw() {
 }
