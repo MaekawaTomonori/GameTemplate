@@ -1,5 +1,4 @@
 #include <memory>
-#include <Windows.h>
 #include "MyGame.hpp"
 #include "include/Framework.hpp"
 
