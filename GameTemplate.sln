@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "Engine\Engine.vcxproj", "{675984EA-A7A7-49AD-B456-6793BF1A67FA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{05A9737C-E682-451F-A307-4B01DEB9D44B} = {05A9737C-E682-451F-A307-4B01DEB9D44B}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game", "Game\Game.vcxproj", "{6252CECD-FED9-44A7-AE51-A96787570A59}"
 EndProject
@@ -13,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lwlog", "Engine\vendor\lwlog\lwlog\lwlog.vcxproj", "{CA71E40F-3686-0CC1-FF07-B0206BDB08F2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "imgui", "Engine\vendor\imgui\imgui.vcxproj", "{05A9737C-E682-451F-A307-4B01DEB9D44B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,6 +51,14 @@ Global
 		{CA71E40F-3686-0CC1-FF07-B0206BDB08F2}.Release|x64.Build.0 = Release|x64
 		{CA71E40F-3686-0CC1-FF07-B0206BDB08F2}.Release|x86.ActiveCfg = Release|x64
 		{CA71E40F-3686-0CC1-FF07-B0206BDB08F2}.Release|x86.Build.0 = Release|x64
+		{05A9737C-E682-451F-A307-4B01DEB9D44B}.Debug|x64.ActiveCfg = Debug|x64
+		{05A9737C-E682-451F-A307-4B01DEB9D44B}.Debug|x64.Build.0 = Debug|x64
+		{05A9737C-E682-451F-A307-4B01DEB9D44B}.Debug|x86.ActiveCfg = Debug|Win32
+		{05A9737C-E682-451F-A307-4B01DEB9D44B}.Debug|x86.Build.0 = Debug|Win32
+		{05A9737C-E682-451F-A307-4B01DEB9D44B}.Release|x64.ActiveCfg = Release|x64
+		{05A9737C-E682-451F-A307-4B01DEB9D44B}.Release|x64.Build.0 = Release|x64
+		{05A9737C-E682-451F-A307-4B01DEB9D44B}.Release|x86.ActiveCfg = Release|Win32
+		{05A9737C-E682-451F-A307-4B01DEB9D44B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
