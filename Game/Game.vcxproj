@@ -156,15 +156,9 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MyGame.cpp" />
-    <ClCompile Include="Scene\GameScene.cpp" />
-    <ClCompile Include="Scene\ResultScene.cpp" />
-    <ClCompile Include="Scene\TitleScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyGame.hpp" />
-    <ClInclude Include="Scene\GameScene.hpp" />
-    <ClInclude Include="Scene\ResultScene.hpp" />
-    <ClInclude Include="Scene\TitleScene.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -4,9 +4,9 @@
 
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int){
 
-	Framework project;
-	project.Execute(std::make_unique<MyGame>());
+    Framework project;
+    project.Execute(std::make_unique<MyGame>());
 
-	return 0;
+    return 0;
 }
 
