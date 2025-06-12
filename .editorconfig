@@ -5,5 +5,5 @@ root = true
 indent_style = space
 indent_size = 4
 
-[*.{hpp,cpp}]
+[*.{hpp,cpp,hlsl,hlsli}]
 charset = utf-8
