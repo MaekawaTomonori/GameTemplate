@@ -1,6 +1,6 @@
 #ifndef MyGame_HPP_
 #define MyGame_HPP_
-#include "include/IGame.hpp"
+#include "IGame.hpp"
 
 class MyGame final : public IGame{
 public:
