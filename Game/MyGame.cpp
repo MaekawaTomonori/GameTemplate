@@ -1,21 +1,12 @@
 #include "MyGame.hpp"
 
-MyGame::MyGame(): IGame() {
-} 
+#include "SceneFactory.hpp"
 
-MyGame::~MyGame() = default;
-
-void MyGame::Initialize() {
+MyGame::MyGame(): IGame(std::make_unique<SceneFactory>()) {
     GetCurrentConfig()
         .SetTitle("Engine")
         .SetFPS(60);
 }
 
-void MyGame::Update() {
-}
+MyGame::~MyGame() = default;
 
-void MyGame::Shutdown() {
-}
-
-void MyGame::Draw() {
-}

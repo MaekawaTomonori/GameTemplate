@@ -6,13 +6,6 @@ class MyGame final : public IGame{
 public:
     MyGame();
     ~MyGame() override;
-    void Initialize() override;
-    void Update() override;
-    void Shutdown() override;
-    void Draw() override;
-
-private:
-
 }; // class MyGame
 
 #endif // MyGame_HPP_
