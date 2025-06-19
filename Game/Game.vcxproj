@@ -131,8 +131,7 @@
       <Command>copy "$(WindowsSdkDir)bin\$(TargetPlatformVersion)\x64\dxcompiler.dll" "$(TargetDir)dxcompiler.dll"
 copy "$(WindowsSdkDir)bin\$(TargetPlatformVersion)\x64\dxil.dll" "$(TargetDir)dxil.dll"
 copy "$(VCToolsInstallDir)bin\Hostx64\x64\clang_rt.asan_dbg_dynamic-x86_64.dll" "$(TargetDir)clang_rt.asan_dbg_dynamic-x86_64.dll"
-copy "$(VCToolsInstallDir)bin\Hostx64\x64\clang_rt.asan_dynamic-x86_64.dll" "$(TargetDir)clang_rt.asan_dynamic-x86_64.dll"
-xcopy "$(SolutionDir)Assets\*" "$(TargetDir)Assets\"</Command>
+copy "$(VCToolsInstallDir)bin\Hostx64\x64\clang_rt.asan_dynamic-x86_64.dll" "$(TargetDir)clang_rt.asan_dynamic-x86_64.dll"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -161,7 +160,8 @@ xcopy "$(SolutionDir)Assets\*" "$(TargetDir)Assets\"</Command>
 copy "$(WindowsSdkDir)bin\$(TargetPlatformVersion)\x64\dxil.dll" "$(TargetDir)dxil.dll"
 copy "$(VCToolsInstallDir)bin\Hostx64\x64\clang_rt.asan_dbg_dynamic-x86_64.dll" "$(TargetDir)clang_rt.asan_dbg_dynamic-x86_64.dll"
 copy "$(VCToolsInstallDir)bin\Hostx64\x64\clang_rt.asan_dynamic-x86_64.dll" "$(TargetDir)clang_rt.asan_dynamic-x86_64.dll"
-xcopy "$(SolutionDir)Assets\*" "$(TargetDir)Assets\"</Command>
+xcopy "$(SolutionDir)Assets\*" "$(TargetDir)Assets\"
+xcopy "$(SolutionDir)Engine\Assets\*" "$(TargetDir)Engine\Assets\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
