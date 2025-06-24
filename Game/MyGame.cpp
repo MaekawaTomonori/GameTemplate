@@ -2,7 +2,7 @@
 
 #include "SceneFactory.hpp"
 
-MyGame::MyGame(): IGame(std::make_unique<SceneFactory>()) {
+MyGame::MyGame(): IGame(std::make_unique<SceneFactory>(), "sample") {
     GetCurrentConfig()
         .SetTitle("Engine")
         .SetFPS(60);
