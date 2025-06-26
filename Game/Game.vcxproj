@@ -133,6 +133,9 @@ copy "$(WindowsSdkDir)bin\$(TargetPlatformVersion)\x64\dxil.dll" "$(TargetDir)dx
 copy "$(VCToolsInstallDir)bin\Hostx64\x64\clang_rt.asan_dbg_dynamic-x86_64.dll" "$(TargetDir)clang_rt.asan_dbg_dynamic-x86_64.dll"
 copy "$(VCToolsInstallDir)bin\Hostx64\x64\clang_rt.asan_dynamic-x86_64.dll" "$(TargetDir)clang_rt.asan_dynamic-x86_64.dll"</Command>
     </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>xcopy /y /s /i "$(SolutionDir)Engine\Assets\*" "$(SolutionDir)Assets\"</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -163,6 +166,9 @@ copy "$(VCToolsInstallDir)bin\Hostx64\x64\clang_rt.asan_dynamic-x86_64.dll" "$(T
 xcopy "$(SolutionDir)Assets\*" "$(TargetDir)Assets\"
 xcopy "$(SolutionDir)Engine\Assets\*" "$(TargetDir)Engine\Assets\"</Command>
     </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>xcopy /y /s /i "$(SolutionDir)Engine\Assets\*" "$(SolutionDir)Assets\"</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
