@@ -3,10 +3,12 @@
 #include <memory>
 
 #include "IScene.hpp"
+#include "Model.hpp"
 #include "Sprite.hpp"
 
 class SampleScene final : public IScene{
     std::unique_ptr<Sprite> sprite_;
+    std::unique_ptr<Model> model_;
 public:
     void Initialize() override;
     void Update() override;
