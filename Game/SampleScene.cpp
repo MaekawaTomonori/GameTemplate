@@ -6,7 +6,7 @@ void SampleScene::Initialize() {
     sprite_->SetPosition({100, 100});
 
     model_ = std::make_unique<Model>();
-    model_->Initialize("terrain");
+    model_->Initialize("walk");
 }
 
 void SampleScene::Update() {
