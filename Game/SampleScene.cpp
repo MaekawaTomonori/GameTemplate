@@ -2,7 +2,7 @@
 
 void SampleScene::Initialize() {
     sprite_ = std::make_unique<Sprite>();
-    sprite_->Initialize("circle.png");
+    sprite_->Initialize("circle2.png");
     sprite_->SetPosition({100, 100});
 
     model_ = std::make_unique<Model>();
