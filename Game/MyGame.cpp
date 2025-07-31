@@ -4,7 +4,7 @@
 
 MyGame::MyGame(): IGame(std::make_unique<SceneFactory>(), "sample") {
     GetCurrentConfig()
-        .SetTitle("Engine")
+        .SetTitle("GameTemplate")
         .SetFPS(60);
 }
 
