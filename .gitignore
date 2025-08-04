@@ -10,8 +10,10 @@
 *.userosscache
 *.sln.docstates
 
-# ignore user
+# ignore
+*.sln
 *.vcxproj.user
+*.vcxproj.filters
 
 # Output
 out/
